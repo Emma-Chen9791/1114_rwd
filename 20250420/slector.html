@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.primary{
+    color: blue;
+}
+
+.red{  
+    color: red;
+}
+
+#green{
+    color: green ;
+}
+
+li{
+    color: black; }
+
+/* 盡量不要用 !important ---強制覆蓋
+li{
+    color: rgb(128, 0, 98) !important; }
+*/
+
+
+    /* 通用選擇器 */
+    /* *{
+        color: red;
+    } */
+    /* 元素選擇器 */
+    /* h1{ color: orange;}
+    .menu {
+    color: orange;
+    }
+        ↓ */
+h1,
+h2,
+.menu{
+    color: orange;
+}
+
+
+
+.r{
+    color: blue;
+}
+
+.g{
+    color: red;
+}
+.b{
+    color: green;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+/* 駝峰命名法
+.bgBlack{
+    background-color: black;} */
+
+    /* 不建議使用id */
+#ccc{
+    color: yellow;
+    background-color: purple;}
+
+
+</style>
+
+
+</head>
+<body>
+<!--css優先權：行內樣式>頁首id宣告>頁首宣告>預設 -->
+<ul class="primary">
+    <li class="red">001</li>
+    <li class="red" id="green">002</li>
+    <li>003</li>
+    </ul>
+
+
+
+<ul class="menu">
+    <li style="color: yellow;  background-color: purple;">aaa</li>
+    <li class="r bg-black">bbb</li>
+    <li class="b" id="ccc">ccc</li>
+    </ul>
+
+    <hr>
+    <h1 class="r">hello world</h1>
+    <h1 class="g">hello world</h1>
+    <h1>hello world</h1>
+
+    <p class="b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis tempore consequuntur voluptas iusto asperiores 
+         corrupti sunt sapiente dolorem! Nostrum nihil modi quia assumenda eveniet quo consequatur rem placeat animi ex!</p>
+
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+
+
+</body>
+</html>

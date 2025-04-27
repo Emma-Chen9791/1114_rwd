@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+
+/* nav 後代用空格 */
+        nav h6,
+        nav p
+        {
+            color: red;
+        }
+
+        p
+        {
+            color: red;
+        }
+        p
+        {
+            color: yellow;
+        }
+
+/* 範圍小、描述詳細 後 優先 */
+        /* nav 子代用箭頭 */
+        nav >p {
+            color: blue;
+            color:purple
+        }
+</style>
+</head>
+<body>
+<h6>hello world</h6>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <nav>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h6>hello world</h6>
+            <div>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+</body>
+</html>

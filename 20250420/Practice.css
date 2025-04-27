@@ -1,0 +1,12 @@
+
+/* 先檢查import合併代碼，才開始查看所有樣式 */
+@import url('style.css');
+
+/* 外部樣式表，HTML透過LINK:css讀取此份 */
+    h1,
+    h2{
+        color: blue;
+         font-size: 55px;
+         background-color: violet;
+       
+    } 

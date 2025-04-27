@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽類選擇 Pseudo Class Selector</title>
+<style>
+a {
+    color: purple;
+}
+
+    
+    a:link {
+        color: red;
+    }
+     a:visited {
+        color: green;
+    }
+    a:hover {
+        color: yellow;
+    }
+    a:active {
+        color: blue;
+    }
+
+h1 :hover {
+    color: red;
+}
+
+ /* table>tbody>tr {  
+ 
+
+    background-color: lightblue;
+} */
+
+table.demo tr.odd{
+    background-color: lightblue;
+}
+
+/* 偽類:否定選擇 */
+table.demo tr:not(.odd){
+    background-color: lightgreen;
+}
+
+
+table.demo1 tr{
+    background-color: lightgreen;
+}
+/* 部分覆蓋 */
+/* table.demo1 tr.odd{
+    background-color: lightblue;
+} */
+
+table.demo1 tr:nth-child(even){
+    background-color: lightblue;
+}
+
+table.demo2 tr:nth-child(3n){
+    background-color: lightyellow;
+}
+table.demo2 tr:nth-child(3n+1){
+    background-color: lightgreen;
+}
+table.demo2 tr:nth-child(3n+2){
+    background-color: lightslategrey;
+}
+
+
+/* 所有元素第二個且是h5才動作 */
+/* h5:nth-child(2n){
+    background-color: lightyellow;
+} */
+
+h5:nth-of-type(2n){
+    background-color: lightgreen;
+}
+
+h5:nth-last-child(2n){
+    background-color: red;
+}
+
+h5:nth-last-of-type(2n){
+    background-color: green;
+}
+
+h5:first-child{
+    /* =nth-of-type(1) */
+    background-color: yellow;
+}
+
+
+/* has 偽類選擇器，該元素持有指定的後代元素(選擇條件) */
+.demo4 section:has(.r){
+    background-color: lightgoldenrodyellow;
+}
+
+
+.demo5:hover{
+    background-color: lightgreen;
+}   
+.demo5:focus{
+    background-color: lightblue;
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <input type="text" name="" class="demo5" >
+
+<div class="demo4">
+    <section>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+       
+    </section>
+    <section>
+       
+        <h1 class="r">Lorem ipsum dolor sit amet.</h1>
+    </section>
+</div>
+
+
+
+
+<div  class="demo3">
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<hr>
+
+
+
+<table border="1" width="300" cellspacing="0" class="demo">
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>001</td>
+    </tr>
+    <tr class="odd">
+        <td >002</td>
+        <td>002</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>003</td>
+    </tr>
+    <tr class="odd">
+        <td>004</td>
+        <td>004</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+<table border="1" width="300" cellspacing="0" class="demo1">
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>001</td>
+    </tr>
+    <tr class="odd">
+        <td >002</td>
+        <td>002</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>003</td>
+    </tr>
+    <tr class="odd">
+        <td>004</td>
+        <td>004</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+<table border="1" width="300" cellspacing="0" class="demo2">
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>001</td>
+    </tr>
+    <tr>
+        <td >002</td>
+        <td>002</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>003</td>
+    </tr>
+    <tr>
+        <td>004</td>
+        <td>004</td>
+    </tr>
+    <tr>
+        <td>005</td>
+        <td>005</td>
+    </tr>
+    <tr>
+        <td >006</td>
+        <td>006</td>
+    </tr>
+    <tr>
+        <td>007</td>
+        <td>007</td>
+    </tr>
+    <tr>
+        <td>008</td>
+        <td>008</td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>偽類選擇 Pseudo Class Selector</h1>
+
+
+    <a href="https://www.google.com.tw" target="_blank">google</a>
+<hr>
+    <a class="a" href="https://www.google.com.tw" target="_blank">google a</a>
+
+
+</body>
+</html>

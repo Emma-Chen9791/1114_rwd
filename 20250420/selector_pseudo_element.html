@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素</title>
+<style>
+    div {
+        color: red;
+
+    }
+div::before{
+    content: "hello";
+    color: blue;
+}
+div::after{
+    content: "world";
+    color: black;
+}
+
+
+.demo3::first-letter{
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.demo3::first-line{
+    text-decoration:dashed underline;
+}
+
+.demo3::selection{
+    color: red;
+    background-color: yellow;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<p class="demo3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odit repellendus consectetur similique ducimus eaque magnam possimus consequuntur atque facilis iste ratione illum quis repudiandae quasi, unde deserunt quam. Dolore, rem. Aspernatur ratione obcaecati facilis ut quos, voluptate pariatur quas. Doloremque magnam voluptate, consequatur aperiam consequuntur est sapiente magni ab!</p>
+<p class="demo3">合理勝利類別青草湖支持進度很多私服他對，這場留學將來計劃，聽說如同倒是一看花園眼淚書記情人不到提示。
+    類別青草湖支持進度很多私服他對，這場留學將來計劃，聽說如同倒是一看花園眼淚書記情人不到提示類別青草湖支持進度很多私服他對，這場留學將來計劃，聽說如同倒是一看花園眼淚書記情人不到提示。類別青草湖支持進度很多私服他對，這場留學將來計劃，聽說如同倒是一看花園眼淚書記情人不到提示。。</p>
+
+
+    <div>Lorem ipsum dolor sit amet.</div>
+
+
+
+</body>
+</html>
