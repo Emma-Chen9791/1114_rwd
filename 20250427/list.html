@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.demo1 {
+            list-style-type: decimal;
+            /* list-style-position: inside; */
+            list-style-image: url('aaa.png');
+        }
+
+        ol.demo2 {
+            list-style-type: disc;
+        }
+
+        /* li{
+            border: solid;
+        } */
+
+
+        ul.demo4 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+line-height: 50px;
+        }
+
+            li {
+
+                display: inline-block;
+                text-align: center;
+                line-height: 50px;
+                font-size: 1rem;
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    background: white;
+                    display: inline-block;
+                    width: 100px;
+                    height: 50px;
+
+                    &:hover {
+                        color: darkcyan;
+                        background: #ccc;
+
+                    }
+
+                }
+            }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- ul.demo5>(li>a{$$$})*4 -->
+    <ul class="demo4">
+        <li><a href="#">001</a></li>
+        <li><a href="#">002</a></li>
+        <li><a href="#">003</a></li>
+        <li><a href="#">004</a></li>
+    </ul>
+
+
+    <ol>
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+    </ol>
+
+
+    <!-- ul>li*4{(}$$$AAAA} -->
+    <ul class="demo1">
+        <li>001AAAA</li>
+        <li>002AAAA</li>
+        <li>003AAAA</li>
+        <li>004AAAA</li>
+    </ul>
+
+    <ol class="demo2">
+        <li>001AAAA</li>
+        <li>002AAAA</li>
+        <li>003AAAA</li>
+        <li>004AAAA</li>
+    </ol>
+
+</body>
+
+</html>

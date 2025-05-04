@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.demo{
+    width: 300px;
+    height: 300px;
+    background: lightcyan;
+
+background-image: url("https://fakeimg.pl//1920x1080/");
+background-position: center top;
+
+background:lightcoral;
+
+
+/* background-repeat: no-repeat;
+background-repeat: repeat-x; */
+background-repeat: repeat no-repeat; /* x軸repeat y軸no-repeat */
+
+/* space round 通常圖片尺寸比例無法填滿容器，不足的部分該怎麼呈現? */
+background-repeat: space no-repeat;
+
+background-repeat: no-repeat;
+
+/* background-size: cover; */
+
+/* keyword=top,bottom,left,right,center */
+/* background-position: right ; */
+
+background-position: 50% 50px;
+
+
+background-size: cover;
+
+}
+
+.demo2{
+    width: 300px;
+    height: 300px;
+    background: lightcyan;
+background-image: url("https://picsum.photos/300/200/?random=10"),
+url("https://picsum.photos/300/200/?random=5");
+background-repeat: no-repeat,repeat-x;
+background-position: right bottom,left top;
+
+
+/* background-repeat: no-repeat;
+background-repeat: repeat-x; */
+background-repeat: repeat no-repeat; /* x軸repeat y軸no-repeat */
+
+/* space round 通常圖片尺寸比例無法填滿容器，不足的部分該怎麼呈現? */
+background-repeat: space no-repeat; 
+}
+
+.demo3{
+    width: 300px;
+    height: 300px;
+    background: lightcyan;
+    background-image:
+    url("https://picsum.photos/100/100/?random=1") no-repeat,right bottom,
+    url("https://picsum.photos/100/100/?random=2") no-repeat,center top,
+    lightgreen;
+}
+
+.demo4{
+    width: 300px;
+    height: 300px;
+    background: lightcyan;
+    background-image:
+    url("https://picsum.photos/100/100/?random=1") no-repeat,right bottom,
+    url("https://picsum.photos/100/100/?random=2") no-repeat,center top,
+    lightgreen;
+
+
+
+}
+
+.demo5{
+width: 300px;
+height: 300px;
+/* background-image:url("https://picsum.photos/100/100/?random=1"); */
+background-image:linear-gradient(45deg,#2a7b9b 0%,yellow 50%,rgba(26, 26, 115, 1) 100%);
+background-image: radial-gradient(ellipse,#2a7b9b33 0%,yellow 50%,rgba(26, 26, 115, 1) 70%);
+background-image: radial-gradient(circle,#2a7b9b33 0%,lightcyan 50%,rgba(26, 26, 115, 1) 70%);
+background-image: radial-gradient(circle at 0% 0%,#2a7b9b33 0%,lightcyan 50%,rgba(26, 26, 115, 1) 70%);
+
+/* background-image: radial-gradient(at 0% 0%,#2a7b9b33 0%,yellow 50%,rgba(26, 26, 115, 1) 70%); */
+}
+
+.demo6{
+    width: 300px;
+    height: 300px;
+   
+    background-image:
+    linear-gradient(90deg,#2a7b9b , transparent 60%),
+    linear-gradient(135deg,rgb(236, 19, 164),transparent 60%),
+    linear-gradient(180deg,#53a329,transparent 60%),
+    linear-gradient(225deg,#eddd53,transparent 60%)
+    ;
+}
+.my-bg{
+    background-image: url("silent.jpg");
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="demo6"></div>
+    <div class="demo5"></div>
+    <!-- picsum 或 fakeimg 快速生成假圖片 -->
+    <!-- <img src="https://picsum.photos/300/200/?random=20"> -->
+    <div class="demo1"></div>
+
+    <div class="demo2"></div>
+    <div class="demo4"></div>
+</body>
+</html>

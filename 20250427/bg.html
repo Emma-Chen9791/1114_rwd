@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.demo{
+    width: 300px;
+    height: 300px;
+    background: lightcyan;
+background-image: url("https://picsum.photos/300/200/?random=10");
+background-image: url("https://fakeimg.pl//100x100/");
+/* background-repeat: no-repeat;
+background-repeat: repeat-x; */
+background-repeat: repeat no-repeat; /* x軸repeat y軸no-repeat */
+
+/* space round 通常圖片尺寸比例無法填滿容器，不足的部分該怎麼呈現? */
+background-repeat: space no-repeat;
+
+background-repeat: no-repeat;
+
+/* background-size: cover; */
+
+/* keyword=top,bottom,left,right,center */
+/* background-position: right ; */
+
+background-position: 50% 50px;
+
+
+background-size: cover;
+
+}
+
+
+.my-bg{
+    background-image: url("silent.jpg");
+}
+
+</style>
+
+
+</head>
+<body>
+    <!-- picsum 或 fakeimg 快速生成假圖片 -->
+    <!-- <img src="https://picsum.photos/300/200/?random=20"> -->
+    <div class="demo">
+
+
+    </div>
+
+
+
+</body>
+</html>
