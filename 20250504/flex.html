@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    margin: 0;
+}
+
+.flex-centainer{
+ background: lightgoldenrodyellow;
+ display: flex;
+height: 500px;
+
+
+flex-direction: row;/* 主軸方向從哪邊開始 */
+justify-content: center;
+
+flex-flow: row wrap-reverse;
+align-content: space-evenly;
+
+}
+
+.flex-item{
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+
+    border: 1px solid ;
+   
+}
+
+.special-item{
+    /* 子項目的flex控制 */
+
+    align-self: center;
+}   
+
+</style>
+
+</head>
+<body>
+    <section class="flex-centainer">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+  
+    </section>
+
+
+
+</body>
+</html>

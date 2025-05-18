@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dice {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, while, #ccc);
+            border: 1px solid;
+            border-radius: 5%;
+
+            box-shadow: 3px 3px 10px 0px 0 0 #00000070;
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .span {
+
+            width: 20%;
+            height: 20%;
+            /* margin: 5px; */
+            background-color: black;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+        }
+
+        .at9 {
+            right: 10%;
+            top: 10%;
+        }
+
+        .at7 {
+            left: 10%;
+            top: 10%;
+        }
+
+        .at6 {
+            right: 10%;
+            bottom: 40%;
+        }
+        .at5 {
+            left: 40%;
+            top: 40%;
+
+        }
+        .at4 {
+            left: 10%;
+            bottom: 40%;
+        }
+
+        .at3 {
+            left: 10%;
+            bottom: 10%;
+        }
+        .at1 {
+            right: 10%;
+            bottom: 10%;
+        }
+
+        /* .p{
+position: absolute;
+top: 5px;
+left: 5px;
+background-color: darkcyan;
+border-radius: 50%;
+} */
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="dice">
+        <span class="p at1"></span>
+        <span class="p at3"></span>
+        <span class="p at7"></span>
+        <span class="p at9"></span>
+    </div>
+
+    <div class="dice">
+        <span class="p at1"></span>
+        <span class="p at3"></span>
+        <span class="p at5"></span>
+        <span class="p at7"></span>
+        <span class="p at9"></span>
+
+        <!-- <div class="p at7"></div>
+    <div class="p at1"></div> -->
+    </div>
+
+    <div class="dice">
+        <span class="p at1"></span>
+        <span class="p at3"></span>
+        <span class="p at4"></span>
+        <span class="p at6"></span>
+        <span class="p at7"></span>
+        <span class="p at9"></span>
+    </div>
+</body>
+
+</html>
