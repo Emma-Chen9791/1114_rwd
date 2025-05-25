@@ -1,0 +1,17 @@
+ /* 注意，@import必須寫在一開始，否則會報錯 */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+ body {
+     font-family: 'Roboto', 'Noto Sans TC', 'Open Sans', sans-serif;
+     background: #333;
+ }
+
+ #imgSlider {
+     img {
+
+        /* grayscale 變灰(暗) sepia 變舊 */
+         filter: grayscale(50%) sepia(50%);
+     }
+
+
+ }
