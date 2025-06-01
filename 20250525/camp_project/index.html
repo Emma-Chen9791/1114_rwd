@@ -1,61 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="渡假勝地住宿,住宿資訊">
-    <meta name="author" content="渡假勝地">
-    <meta name="keywords" content="渡假勝地,住宿">
-    <title>渡假勝地</title>
-    <!-- bootstrap套件 -->
-    <link rel="stylesheet" href="./plugins/bootstrap.css">
-    <script src="./plugins/bootstrap.bundle.min.js"></script>
 
-<!-- 自訂css -->
-    <link rel="stylesheet" href="./plugins/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="渡假勝地住宿,住宿資訊">
+  <meta name="author" content="渡假勝地">
+  <meta name="keywords" content="渡假勝地,住宿">
+  <title>渡假勝地</title>
+  <!-- bootstrap套件 -->
+  <link rel="stylesheet" href="./plugins/bootstrap.css">
+  <script src="./plugins/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" /> -->
+
+  <!-- 自訂css -->
+  <link rel="stylesheet" href="./plugins/style.css">
 
 </head>
-<body>
 
-    <!-- 輪播圖 -->
-    <section id="imgSlider" class="carousel slide carousel-fade" >
-  <nav class="carousel-indicators">
-    <button data-bs-target="#imgSlider" data-bs-slide-to="0" class="active"></button>
-    <button data-bs-target="#imgSlider" data-bs-slide-to="1"></button>
-    <button data-bs-target="#imgSlider" data-bs-slide-to="2"></button>
+<body data-bs-spy="scroll" data-bs-target="#lokiNav">
+  <!-- 選單 -->
+   <!-- <nav id="lokiMenu" class="navbar navbar-expand-md bg-body-tertiary">-->
+  <nav id="lokiMenu" class="navbar navbar-expand-md bg-gradient postiton-fixed top-0 w-100" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+      <!-- <img src="./media/favicon.ico" class="img-fluid"> -->
+
+        <span>露營渡假村</span>
+      </a>
+
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#lokiNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="lokiNav">
+        <div class="navbar-nav me-auto my-3 my-md-0 gap-2 gap-xl-5">
+          <a class="nav-link" href="#lokiPallet">營位介紹</a>
+          <a class="nav-link" href="#lokiPart">探索體驗</a>
+          <a class="nav-link" href="#lokiService">遊客服務</a>
+          <a class="nav-link" href="#lokiRules">營區守則</a>
+          <a class="nav-link" href="#LokiContact">聯絡我們</a>
+        </div>
+      </div>
+    </div>
   </nav>
-  <div class="carousel-inner">
-    <div class="carousel-item vh-100 active">
+
+
+
+
+
+
+
+
+  <!-- 輪播圖 --> <!--data-bs-ride 自動輪播 data-bs-interval 自動輪播間隔-->
+  <section id="imgSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
+    <nav class="carousel-indicators">
+      <button data-bs-target="#imgSlider" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#imgSlider" data-bs-slide-to="1"></button>
+      <button data-bs-target="#imgSlider" data-bs-slide-to="2"></button>
+    </nav>
+    <div class="carousel-inner">
+      <div class="carousel-item vh-100 active">
         <img src="https://picsum.photos/1920/1680/?random=7" class="d-block w-100 h-100 object-fit-cover">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <div class="carousel-caption d-flex flex-column align-items-start">
+
+
+          <h3 class="h1">
+            <span class="badge bg-success">山景</span>
+            <span class="badge bg-white text-dark">芬多精</span>
+
+          </h3>
+          <h2 class="display-1 fw-bolder text-start">體驗大自然的空氣</h2>
+
+          <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item vh-100">
+        <img src="https://picsum.photos/1920/1680/?random=8" class="d-block w-100 h-100 object-fit-cover">
+        <div class="carousel-caption d-flex flex-column align-items-start">
+          <h3 class="h1">
+            <span class="badge bg-info">溫泉</span>
+            <span class="badge bg-warning">日光浴</span>
+
+          </h3>
+          <h2 class="display-1 fw-bolder text-start">山間的裸湯</h2>
+          <p class="d-none d-md-block">Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item vh-100">
+        <img src="https://picsum.photos/1920/1680/?random=9" class="d-block w-100 h-100 object-fit-cover">
+        <div class="carousel-caption d-flex flex-column align-items-start">
+          <h3 class="h1">
+            <span class="badge bg-primary">露營</span>
+            <span class="badge bg-danger">篝火</span>
+
+          </h3>
+          <h2 class="display-1 fw-bolder text-start">拉近人之間溫暖</h2>
+          <p class="d-none d-md-block">Some representative placeholder content for the third slide.</p>
+        </div>
       </div>
     </div>
-    <div class="carousel-item vh-100">
-      <img src="https://picsum.photos/1920/1680/?random=8" class="d-block w-100 h-100 object-fit-cover">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
+    <button class="carousel-control-prev w-auto" data-bs-target="#imgSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+
+      <!-- <i class ="d-none d-md-block fa-solid fa-arrow-left"></i> fontawesome icon -->
+      <!-- <i class="d-md-none fa-solid fa-arrow-left"></i> fontawesome icon -->
+      <!-- <span class="d-md-none material-symbols-outlined">arrow_left</span> google icon -->
+    </button>
+    <button class="carousel-control-next w-auto" data-bs-target="#imgSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+
+      <!-- <i class="d-none d-md-block fa-solid fa-arrow-right"></i> fontawesome icon -->
+      <!-- <i class="d-md-none fa-solid fa-arrow-right"></i> fontawesome icon -->
+
+      <!-- <span class="d-md-none material-symbols-outlined">arrow_right</span> google icon -->
+    </button>
+  </section>
+
+
+
+
+  <!-- 營位介紹 -->
+  <section id="lokiPallet" class="container py-5">
+    <div class="row row-cols-4 g-0 mt-5"> <!--g-0 表示不要間距-->
+
+      <img class="col object-fit-cover" src="https://picsum.photos/300/300/?random=1">
+      <img class="col object-fit-cover" src="https://picsum.photos/300/300/?random=2">
+      <img class="col object-fit-cover" src="https://picsum.photos/300/300/?random=3">
+      <img class="col object-fit-cover " src="https://picsum.photos/300/300/?random=4">
     </div>
-    <div class="carousel-item vh-100">
-      <img src="https://picsum.photos/1920/1680/?random=9" class="d-block w-100 h-100 object-fit-cover">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+
+    <header class="h2 border-start border-5 border-warning ps-4 my-5">營位介紹</header>
+    <article class="row row-cols-1 row-cols-md-2 g-5 flex-row-reverse">
+      <div class="col">
+        <div class="card bg-dark text-white overflow-hidden">
+          <img src="https://picsum.photos/800/600/?random=11" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="card-title text-warning fw-bolder">河畔 x A區</h5>
+            <ui class="list-unstyled">
+              <li>每帳4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台車，超過酌收至指定停車場費用$100/車</li>
+              <li>每帳限4人，超出人數(五歲以上)，酌收人頭費$300</li>
+            </ui>
+
+            <h3 class="card-text">
+              <label class="badge rounded-pill text-bg-light">一宿 / $1200</label>
+              <label class="badge rounded-pill text-bg-dark">夜衝 / $800</label>
+
+            </h3>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" data-bs-target="#imgSlider" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" data-bs-target="#imgSlider" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</section>
-   
+
+      <div class="col">
+        <div class="card bg-dark text-white overflow-hidden">
+          <img src="https://picsum.photos/800/600/?random=12" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="card-title text-warning fw-bolder">河畔 x B區</h5>
+            <ui class="list-unstyled">
+              <li>每帳4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台車，超過酌收至指定停車場費用$100/車</li>
+              <li>每帳限4人，超出人數(五歲以上)，酌收人頭費$300</li>
+            </ui>
+
+            <h3 class="card-text">
+              <label class="badge rounded-pill text-bg-light">一宿 / $1200</label>
+              <label class="badge rounded-pill text-bg-dark">夜衝 / $800</label>
+
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card bg-dark text-white overflow-hidden">
+          <img src="https://picsum.photos/800/600/?random=13" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="card-title text-warning fw-bolder">河畔 x C區</h5>
+            <ui class="list-unstyled">
+              <li>每帳4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台車，超過酌收至指定停車場費用$100/車</li>
+              <li>每帳限4人，超出人數(五歲以上)，酌收人頭費$300</li>
+            </ui>
+
+            <h3 class="card-text">
+              <label class="badge rounded-pill text-bg-light">一宿 / $1200</label>
+              <label class="badge rounded-pill text-bg-dark">夜衝 / $800</label>
+
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card bg-dark text-white overflow-hidden">
+          <img src="https://picsum.photos/800/600/?random=14" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="card-title text-warning fw-bolder">河畔 x D區</h5>
+            <ui class="list-unstyled">
+              <li>每帳4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台車，超過酌收至指定停車場費用$100/車</li>
+              <li>每帳限4人，超出人數(五歲以上)，酌收人頭費$300</li>
+            </ui>
+
+            <h3 class="card-text">
+              <label class="badge rounded-pill text-bg-light">一宿 / $1200</label>
+              <label class="badge rounded-pill text-bg-dark">夜衝 / $800</label>
+
+            </h3>
+
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </section>
 
 
 </body>
+
 </html>

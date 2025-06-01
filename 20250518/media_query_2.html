@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* demo1 */
+        /* 這個媒體查詢會在 網頁模式且寬度小於 600px 時觸發(套用) */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                /* display: none; */
+            }
+        }
+
+        /* 這個媒體查詢會在 網頁模式且寬度大於 600px 時觸發(套用) */
+        /* @media screen and (min-width: 600px) { */
+        @media (max-width: 3500px) and (min-width: 600px) {
+            body {
+                background-color: lightcoral;
+                display: none;
+            }
+        }
+
+
+        /* method2 */
+
+        @media (max-width: 300px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media (min-width: 301px) {
+            body {
+                background-color: lightcoral;
+            }
+        }
+
+        @media (max-width: 601px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        @media (min-width: 901px) {
+            body {
+                background-color: lightgoldenrodyellow;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

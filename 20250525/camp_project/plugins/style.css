@@ -1,16 +1,165 @@
  /* 注意，@import必須寫在一開始，否則會報錯 */
  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
+
+ :root {
+     --loki-dark: #282c34;
+     --loki-light: #eee;
+--loki-gray: #cbd7b5;
+ }
+
+ /* 自訂寫在這 */
  body {
      font-family: 'Roboto', 'Noto Sans TC', 'Open Sans', sans-serif;
-     background: #333;
+     background: var(--loki-dark);
+     color: var(--loki-light);
  }
+
+
+ #lokiMenu{
+background-color: #351445;
+--bs-gradient: linear-gradient(235deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0));
+z-index: 9999;
+img{
+    width: 30px;
+}
+
+ }
+
+
+
+#imgSlider {
+.carousel-indicators {
+
+    button {
+width: 15px;
+height: 15px;
+border-radius:50%
+
+    }
+}
+
+
+}
+
+
+
 
  #imgSlider {
      img {
 
-        /* grayscale 變灰(暗) sepia 變舊 */
+         /* grayscale 變灰(暗) sepia 變舊 */
          filter: grayscale(50%) sepia(50%);
+     }
+
+     button {
+         i {
+             width: 50px;
+             height: 50px;
+             line-height: 50px;
+
+             &.fa-caret-left,
+             &.fa-caret-right {
+                 font-size: 3rem;
+                 background: var(--loki-dark);
+             }
+
+             /* &.fa-chevron-left,
+             &.fa-chevron-right {
+                 font-size: 1.5rem;
+
+             } */
+         }
+
+         .material-symbols-outlined {
+             font-size: 3rem;
+         }
+
+
+
+     }
+
+     .carousel-caption {
+         padding-bottom: 140px;
+         z-index: 1; /*圖層*/
+
+         h2 {
+
+             background-clip: text;
+             color: transparent;
+             background-image: linear-gradient(0deg, var(--loki-light) 50%, var(--loki-gray) 50%);
+         }
+
+
+     }
+
+     .carousel-item {
+         padding-bottom: 250px;
+         background: var(--loki-dark);
+     }
+
+
+
+
+     /*
+     .carousel-item::after {
+
+         content: '';
+         background-image:url("https://picsum.photos/1920/1080/?random=1"); 
+          background-image:url("../media/big-line.svg");
+background: url("../media/big-line.svg") repeat; 
+
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         opacity: 0.5;
+
+
+
+     }*/
+
+ }
+
+/* 在768px以上，才動作 */
+ @media (min-width:768px) {
+     #lokiPallet {
+/* 階梯式 grid system */
+/* article {
+   padding-top: 200px;
+ 
+} */
+
+article {
+    padding-top: 250px;
+    .col:nth-child(odd) {
+        transform:translateY(-50%);
+        padding-bottom: 150px;
+    }
+}
+
+
+
+
+         .card-img-overlay {
+             transform: scale(0);
+             transition: transform 0.3s ease-in-out;
+         }
+
+         .card-img {
+             transition: transform 0.3s ease-in-out;
+         }
+
+         .card:hover {
+             .card-img-overlay {
+                 transform: scale(1);
+             }
+
+             .card-img {
+                 transform: scale(1.2);
+             }
+         }
      }
 
 
